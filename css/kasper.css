@@ -780,3 +780,89 @@ header nav .form i {
   display: block;
 }
 /* End Quote */
+/* Start Pricing */
+.pricing {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+.pricing .plans {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+}
+.pricing .plans .plan {
+  background-color: #fcfcfc;
+  text-align: center;
+}
+.pricing .plans .plan .head {
+  padding: 40px;
+  border-top: 1px solid var(--main-color);
+  border-bottom: 1px solid var(--main-color);
+}
+.pricing .plans .plan .head h3 {
+  font-weight: normal;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.pricing .plans .plan .head span {
+  font-size: 60px;
+  font-weight: bold;
+}
+.pricing .plans .plan .head span::before {
+  content: "$";
+  position: relative;
+  font-size: 25px;
+  font-weight: normal;
+  top: -40px;
+  right: 15px;
+}
+.pricing .plans .plan .head span::after {
+  content: "/Mo";
+  position: relative;
+  font-size: 20px;
+  right: -15px;
+}
+.pricing .plans .plan ul {
+  border-bottom: 1px solid var(--main-color);
+}
+.pricing .plans .plan ul li {
+  padding: 20px;
+  position: relative;
+}
+.pricing .plans .plan ul li:not(:last-child)::after {
+  content: "";
+  width: 140px;
+  height: 1px;
+  position: absolute;
+  background-color: var(--main-color);
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  -webkit-transform: translatex(-50%);
+  -moz-transform: translatex(-50%);
+  -ms-transform: translatex(-50%);
+  -o-transform: translatex(-50%);
+}
+.pricing .plans .plan .foot a {
+  display: block;
+  padding: 20px 20px;
+  margin: 30px auto;
+  text-decoration: none;
+  border: 1px solid var(--main-color);
+  width: fit-content;
+}
+.pricing .contact-text {
+  text-align: center;
+  margin: 50px auto 20px;
+  font-size: 20px;
+}
+.pricing .contact-link {
+  display: block;
+  padding: 15px 30px;
+  margin: 20px auto;
+  text-decoration: none;
+  background-color: var(--main-color);
+  color: white;
+  width: fit-content;
+}
+/* End Pricing */
